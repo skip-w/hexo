@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.cnblogs.com/lakb248/p/3790340.html -->
+<html lang="zh-cn" class="webkit chrome chrome90 win js orientation_landscape maxw_1440"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin-when-crossorigin">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hexo搭建个人博客 </title>
+    <link id="favicon" rel="shortcut icon" href="https://common.cnblogs.com/favicon.svg" type="image/svg+xml">
+    
+    <link rel="stylesheet" href="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/blog-common.min.css">
+    <link id="MainCss" rel="stylesheet" href="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/bundle-insidedotnet.min.css">
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/bundle-insidedotnet-mobile.min.css">
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lakb248/rss">
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lakb248/rsd.xml">
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lakb248/wlwmanifest.xml">
+    <script src="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/osd.js.下载"></script><script async="" src="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/analytics.js.下载"></script><script>
+        var currentBlogId = 120376;
+        var currentBlogApp = 'lakb248';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'InsideDotNet';
+        var visitorUserId = '';
+    </script>
+        <script>
+            var currentPostDateAdded = '2014-06-16 09:24';
+        </script>
+ 
+    
+    
+    
+<meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/pubads_impl_2021042801.js.下载" async=""></script><link rel="preload" href="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/f.txt" as="script"><script type="text/javascript" src="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/f.txt"></script><link rel="prefetch" href="https://433691c36f60de292d22101d651648fa.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html"><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-38/html/container.html"></head>
+<body class="no-navbar">
+    <a name="top"></a>
+    <div id="top_nav" class="navbar forpc navbar-custom">
+        <nav id="nav_main" class="navbar-main">
+            <ul id="nav_left" class="navbar-list navbar-left">
+               
+            </ul>
+            <ul id="nav_right" class="navbar-list navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div id="page_begin_html">
+        <!-- Markdown -->
+
+<!-- Markdown End -->
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<div style="display:none"><img id="blogLogo" src="./Hexo搭建个人博客 - 三刀流_彬 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lakb248/">Lin Bin</a>
+</h1>
+<h2></h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		<ul id="navList">
+ 
+
+
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/lakb248/p/3790340.html">
+    <span>Hexo搭建个人博客</span>
+    
+
+
+
+</a>
+
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+<p>一直想搭建一个自己的博客来记录自己的一些学习笔记，由于是学生党经济上有些吃紧所以一直没办法搭建起自己的博客。最近在网上无意中看到了可以借助GitHub来搭建自己的个人博客，于是就折腾了起来。我搭建博客用到的是GitHub+Hexo的搭配，下面就让我来介绍下我的博客搭建的整个过程。</p>
+<h1 id="hexo">Hexo</h1>
+<p>　　Hexo是一个基于Node.js的快速简单的静态博客框架，利用它通过简单的几个命令就可以搭建一个个人博客。</p>
+<blockquote>
+<p>A fast, simple &amp; powerful blog framework,powered by Node.js.</p>
+</blockquote>
+<h1 id="安装hexo">安装Hexo</h1>
+<p>　　我是在Windows上面进行搭建的，所以我这里就介绍下Windows上面的安装方法。安装Hexo首先需要下面两个条件:<br>
+　　- Node.js<br>
+　　- Git<br>
+　　这两个的安装方法大家Google下就好了，一堆堆的。有了这些我们就可以利用npm命令来安装hexo了。</p>
+<pre><code class="language-shell hljs">    npm install hexo -g
+</code></pre>
+<p>　　安装完hexo之后可以开始初始化博客了。<br>
+　　</p>
+<h1 id="初始化博客">初始化博客</h1>
+<p>　　初始化Hexo博客只需要进入博客目录，然后执行下面这条命令就可以了</p>
+<pre><code class="language-shell hljs">    hexo init
+</code></pre>
+<h1 id="生成博客">生成博客</h1>
+<p>　　初始化博客之后博客目录下会产生一些配置文件和模板文件，现在就要利用这些模板文件来生成我们的静态博客文件，通过下面这条命令就可以生成我们的博客</p>
+<pre><code class="language-shell hljs">    hexo generate
+</code></pre>
+<p>　　执行完命令之后，在博客目录下会产生一个public文件夹，这里面存放的就是我们的博客静态文件。</p>
+<h1 id="本地部署">本地部署</h1>
+<p>　　生成博客之后我们就可以开始在本地部署我们的博客</p>
+<pre><code class="language-shell hljs">    hexo server
+</code></pre>
+<p>　　现在我们打开浏览器访问http://localhost:4000  就可以看到我们的博客了。</p>
+<h1 id="部署到github">部署到GitHub</h1>
+<p>　　通过上面这些步骤我们只是在本地搭建起了博客，要让别人看到还需要把它部署到GitHub上。<br>
+　　首先，当然是需要申请一个GitHub账号，然后新建一个Repository，接着在命名的时候需要注意，GitHubPage的名字必须用户名.github.com或者用户名.github.io。<br>
+　　创建完Repository之后，我们要配置Hexo的github地址然后才可以把我们的博客部署到GitHub上面。在博客目录底下打开_congig.yml，这就是Hexo的配置文件。找到下面这段代码</p>
+<pre><code class="language-yaml hljs">    <span class="hljs-comment"># Deployment</span>
+    <span class="hljs-comment">## Docs: http://hexo.io/docs/deployment.html</span>
+    <span class="hljs-attr">deploy:</span>
+    <span class="hljs-attr">type:</span>
+</code></pre>
+<p>　　把上面的内容替换成你刚才创建的Repository地址，如下:</p>
+<pre><code class="language-yaml hljs">    <span class="hljs-comment"># Deployment</span>
+    <span class="hljs-comment">## Docs: http://hexo.io/docs/deployment.html</span>
+    <span class="hljs-attr">deploy:</span>
+    <span class="hljs-attr">type:</span> <span class="hljs-string">github</span>
+    <span class="hljs-attr">repository:</span> <span class="hljs-string">https://github.com/用户名/用户名.github.io.git</span>
+    <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span>
+</code></pre>
+<p>　　创建Repository并且修改配置文件之后我们就可以把我们的博客部署到GitHub上面了，通过下面这个命令，过程中需要输入Git账号和密码:</p>
+<pre><code class="language-shell hljs">    hexo deploy
+</code></pre>
+<p>　　打开浏览器访问http://用户名.github.com 或者 <a href="http://xn--eqr924avxo.github.io/" target="_blank">http://用户名.github.io</a> ，部署之后大约十分钟就可以看到博客效果了。</p>
+<h1 id="配置博客">配置博客</h1>
+<p>　　通过上面的步骤我们完成了博客的基本搭建工作，我们还可以通过修改配置文件来进行博客的个性化定制。<br>
+　　<br>
+　　首先是<em><strong>博客的标题以及作者</strong></em>，通过修改_congig.yml中相应的字段就可以设置标题和作者，如下:</p>
+<pre><code class="language-yaml hljs">    <span class="hljs-comment"># Site</span>
+    <span class="hljs-attr">title:</span> <span class="hljs-string">&lt;h1&gt;My</span> <span class="hljs-string">Coding</span> <span class="hljs-string">Life&lt;/h1&gt;</span> <span class="hljs-string">//标题</span>
+    <span class="hljs-attr">subtitle:</span> <span class="hljs-string">Better</span> <span class="hljs-string">Wife</span> <span class="hljs-string">,</span> <span class="hljs-string">Better</span> <span class="hljs-string">Life</span> <span class="hljs-string">//副标题</span>
+    <span class="hljs-attr">description:</span> <span class="hljs-string">Better</span> <span class="hljs-string">Wife</span> <span class="hljs-string">,</span> <span class="hljs-string">Better</span> <span class="hljs-string">Life</span> <span class="hljs-string">//描述内容</span>
+    <span class="hljs-attr">author:</span> <span class="hljs-string">Bin</span> <span class="hljs-string">//作者</span>
+    <span class="hljs-attr">email:</span> <span class="hljs-string">lakb248@163.com</span> <span class="hljs-string">//邮箱</span>
+    <span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span> <span class="hljs-string">//语言</span>
+</code></pre>
+<p>　　其次是<em><strong>博客的主题</strong></em>，Hexo有许多现成的主题可以选择，在<a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">这里</a>可以得到。下载相应的主题放到博客目录底下的themes文件夹底下。最后需要修改_config.yml中theme字段的值，如下:</p>
+<pre><code class="language-yaml hljs">    <span class="hljs-comment"># Extensions</span>
+    <span class="hljs-comment">## Plugins: https://github.com/tommy351/hexo/wiki/Plugins</span>
+    <span class="hljs-comment">## Themes: https://github.com/tommy351/hexo/wiki/Themes</span>
+    <span class="hljs-attr">theme:</span> <span class="hljs-string">主题名</span>
+</code></pre>
+<p>　　通过上面这一系列步骤，我们的个人博客可以正式上线了。Hexo还有很多其他的功能，比如评论，RSS。更多内容大家请看<a href="http://hexo.io/docs/" target="_blank">官方文档</a>。</p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+
+
+    <div id="blog_post_info">
+<div id="green_channel">
+       
+    <div id="HistoryToday" class="under-post-card"></div>
+    <script type="text/javascript">
+       var commentManager = new blogCommentManager();
+       commentManager.renderComments(0);
+       fixPostBody();
+       deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);       deliverT2();
+       deliverC1C2();
+       loadNewsAndKb();
+       loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);       LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+       GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+       loadOptUnderPost();
+       GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			<div id="sidebar_news" class="newsItem"><!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	
+<div id="blog-news">
+    
+   
+<a href="javascript:void(0)" onclick="follow(&#39;f19879cb-1974-e111-aa3f-842b2b196315&#39;)">+加关注</a></div>
+        <script>getFollowStatus('f19879cb-1974-e111-aa3f-842b2b196315');</script>
+    </div>
+</div>
+</div>
+
+</div>
+<div id="sidebar_c3"></div>
+			<div id="calendar"><div id="calendar"><div id="blog-calendar" style="">
+
+<table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar" border="0">
+    <tbody>
+        <tr>
+            <td colspan="7">
+                <table class="CalTitle" cellspacing="0" border="0">
+                    <tbody>
+                        <tr>
+                            <td class="CalNextPrev">
+                                <a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2021/04/07&#39;); return false;">&lt;</a>
+                            </td>
+                            <td align="center">2021年5月</td>
+                            <td align="right" class="CalNextPrev">
+                                <a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2021/06/07&#39;); return false;">&gt;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    <tr>
+        <th class="CalDayHeader" align="center" abbr="日" scope="col">日</th>
+        <th class="CalDayHeader" align="center" abbr="一" scope="col">一</th>
+        <th class="CalDayHeader" align="center" abbr="二" scope="col">二</th>
+        <th class="CalDayHeader" align="center" abbr="三" scope="col">三</th>
+        <th class="CalDayHeader" align="center" abbr="四" scope="col">四</th>
+        <th class="CalDayHeader" align="center" abbr="五" scope="col">五</th>
+        <th class="CalDayHeader" align="center" abbr="六" scope="col">六</th>
+    </tr>
+            <tr>
+                            <td class="CalOtherMonthDay" align="center">25</td>
+                            <td class="CalOtherMonthDay" align="center">26</td>
+                            <td class="CalOtherMonthDay" align="center">27</td>
+                            <td class="CalOtherMonthDay" align="center">28</td>
+                            <td class="CalOtherMonthDay" align="center">29</td>
+                            <td class="CalOtherMonthDay" align="center">30</td>
+                    <td class="CalWeekendDay" align="center">
+                        1
+                    </td>
+            </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            2
+                        </td>
+                            <td class="" align="center">
+                                3
+                            </td>
+                            <td class="" align="center">
+                                4
+                            </td>
+                            <td class="" align="center">
+                                5
+                            </td>
+                            <td class="" align="center">
+                                6
+                            </td>
+                            <td class="CalTodayDay" align="center">
+                                7
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            8
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            9
+                        </td>
+                            <td class="" align="center">
+                                10
+                            </td>
+                            <td class="" align="center">
+                                11
+                            </td>
+                            <td class="" align="center">
+                                12
+                            </td>
+                            <td class="" align="center">
+                                13
+                            </td>
+                            <td class="" align="center">
+                                14
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            15
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            16
+                        </td>
+                            <td class="" align="center">
+                                17
+                            </td>
+                            <td class="" align="center">
+                                18
+                            </td>
+                            <td class="" align="center">
+                                19
+                            </td>
+                            <td class="" align="center">
+                                20
+                            </td>
+                            <td class="" align="center">
+                                21
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            22
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            23
+                        </td>
+                            <td class="" align="center">
+                                24
+                            </td>
+                            <td class="" align="center">
+                                25
+                            </td>
+                            <td class="" align="center">
+                                26
+                            </td>
+                            <td class="" align="center">
+                                27
+                            </td>
+                            <td class="" align="center">
+                                28
+                            </td>
+                        <td class="CalWeekendDay" align="center">
+                            29
+                        </td>
+                </tr>
+                <tr>
+                        <td class="CalWeekendDay" align="center">
+                            30
+                        </td>
+                            <td class="" align="center">
+                                31
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                1
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                2
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                3
+                            </td>
+                            <td class="CalOtherMonthDay" align="center">
+                                4
+                            </td>
+                        <td class="CalOtherMonthDay" align="center">
+                            5
+                        </td>
+                </tr>
+    </tbody>
+</table></div></div>                
+                    <script>loadBlogDefaultCalendar();</script></div>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><!-- 搜索 -->
+<div id="sidebar_search" class="sidebar-block">
+    <div id="sidebar_search" class="mySearch">
+        <h3 class="catListTitle">搜索</h3>
+        <div id="sidebar_search_box">
+            <div id="widget_my_zzk" class="div_my_zzk">
+                <input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk">
+            </div>
+            <div id="widget_my_google" class="div_my_zzk">
+                <input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 常用链接 -->
+<div id="sidebar_shortcut" class="sidebar-block"><div class="catListLink">
+<h3 class="catListTitle">
+常用链接
+</h3>
+<ul>
+
+<li><a href="https://www.cnblogs.com/lakb248/p/" title="我的博客的随笔列表">我的随笔</a></li>
+<li><a href="https://www.cnblogs.com/lakb248/MyComments.html" title="我的发表过的评论列表">我的评论</a></li>
+<li><a href="https://www.cnblogs.com/lakb248/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li>
+<li><a href="https://www.cnblogs.com/lakb248/RecentComments.html" title="我的博客的评论列表">最新评论</a></li>
+<li><a href="https://www.cnblogs.com/lakb248/tag/" title="我的博客的标签列表">我的标签</a></li>
+
+<li><a id="itemListLink" onclick="this.blur();WarpClass(&#39;itemListLink&#39;, &#39;itemListLin_con&#39;);return false;" href="https://www.cnblogs.com/lakb248/p/3790340.html#">更多链接</a></li>
+</ul>
+</div>
+
+</div>
+
+<!-- 最新随笔 -->
+
+
+<!-- 我的标签 -->
+<div id="sidebar_toptags" class="sidebar-block"></div>
+
+<!-- 积分与排名 -->
+
+
+<!-- 随笔分类、随笔档案、文章分类、新闻分类、相册、链接 -->
+<div id="sidebar_categories">
+
+    <div class="catListPostArchive">
+        <h3 class="catListTitle">
+            
+随笔档案
+
+
+
+        </h3>
+
+        <ul>
+                <li data-category-list-item-visible="true" style="display: block">
+                    
+<a href="https://www.cnblogs.com/lakb248/archive/2014/06.html" rel="" target="">
+    2014年6月(2)
+</a>
+ 
+
+                </li>                            <li data-category-list-item-visible="true" style="display: block">
+                    
+<a href="https://www.cnblogs.com/lakb248/archive/2014/05.html" rel="" target="">
+    2014年5月(1)
+</a>
+ 
+
+                </li>                            <li data-category-list-item-visible="true" style="display: block">
+                    
+<a href="https://www.cnblogs.com/lakb248/archive/2013/03.html" rel="" target="">
+    2013年3月(2)
+</a>
+ 
+
+                </li>                            
+        </ul>
+    </div></div>
+
+<!-- 最新评论 -->
+<div id="sidebar_recentcomments" class="sidebar-block"><div class="catListComment">
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+    
+
+    <input type="hidden" id="antiforgery_token" value="CfDJ8L-rpLgFVEJMgssCVvNUAjuvETAYLnk_SKV07CDACmP8SFHRXpEeOsMboLptxelx2ERY22Elty9SrYbN96kSqOXkzTio7C5QYU-I1v_gNRvVUeYyCwDDkijt1uYwQUX9_6AQWi75pdnNQeTcuCHd_HY">
+
+
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></iframe></body></html>
